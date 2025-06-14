@@ -1,4 +1,4 @@
-package ninzaCRM.GenericUtilities;
+ package ninzaCRM.GenericUtilities;
 
 import java.io.IOException;
 

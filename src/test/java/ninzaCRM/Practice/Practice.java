@@ -18,6 +18,12 @@ public class Practice {
  		driver.findElement(By.id("inputPassword")).sendKeys("rmgy@9999");
  		driver.findElement(By.xpath("//button[text()='Sign In']")).click();
  		 driver.findElement(By.linkText("Contacts")).click();
+ 		 Thread.sleep(5000);
+ 		driver.findElement(By.xpath("//span[text()='Create Contact']")).click();
+ 		driver.findElement(By.name("organizationName")).sendKeys("Capegini");
+ 		driver.findElement(By.name("title")).sendKeys("App");
+ 		driver.findElement(By.name("contactName")).sendKeys("Soni");
+ 		driver.findElement(By.name("contactName")).sendKeys("Soni");
  		/*driver.findElement(By.id("password")).sendKeys("secret_sauce");
  		driver.findElement(By.id("login-button")).click();
  		driver.findElement(By.xpath("//div[@class='inventory_item_label']/..//button[text()='Add to cart']")).click();
