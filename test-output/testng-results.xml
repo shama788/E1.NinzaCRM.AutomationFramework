@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-16T17:36:22 IST" name="Default suite" finished-at="2025-06-16T17:37:06 IST" duration-ms="44785">
+  <suite started-at="2025-06-16T17:59:55 IST" name="Default suite" finished-at="2025-06-16T18:00:20 IST" duration-ms="25214">
     <groups>
     </groups>
-    <test started-at="2025-06-16T17:36:22 IST" name="Default test" finished-at="2025-06-16T17:37:06 IST" duration-ms="44785">
-      <class name="ninzaCRM.LeadsTests.CreateLeadWithCampaignTest">
-        <test-method signature="tc_01_createLeadWithCampaign()[pri:0, instance:ninzaCRM.LeadsTests.CreateLeadWithCampaignTest@771a660]" started-at="2025-06-16T17:36:22 IST" name="tc_01_createLeadWithCampaign" finished-at="2025-06-16T17:37:06 IST" duration-ms="44652" status="PASS">
+    <test started-at="2025-06-16T17:59:55 IST" name="Default test" finished-at="2025-06-16T18:00:20 IST" duration-ms="25214">
+      <class name="ninzaCRM.ContactsTests.CreateContactWithCampaignTest">
+        <test-method signature="tc_02_createContactWithCampaign()[pri:0, instance:ninzaCRM.ContactsTests.CreateContactWithCampaignTest@771a660]" started-at="2025-06-16T17:59:55 IST" name="tc_02_createContactWithCampaign" finished-at="2025-06-16T18:00:20 IST" duration-ms="25149" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc_01_createLeadWithCampaign -->
-      </class> <!-- ninzaCRM.LeadsTests.CreateLeadWithCampaignTest -->
+        </test-method> <!-- tc_02_createContactWithCampaign -->
+      </class> <!-- ninzaCRM.ContactsTests.CreateContactWithCampaignTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
