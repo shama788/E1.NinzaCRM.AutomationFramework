@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 public class CreateLeadWithCampaignTest {
 	
 	@Test
-	public void tc_01_createLeadWithCampaign()
+	public void tc_01_createLeadWithCampaign() throws InterruptedException
 	{
 		//Launch the browser
 		WebDriver driver=new EdgeDriver();
@@ -31,9 +31,9 @@ public class CreateLeadWithCampaignTest {
 	 	 driver.findElement(By.xpath("//span[.='Create Campaign']")).click();
 	 	 
 	 	//Create Campaign with Madatory Field
-	 	driver.findElement(By.name("campaignName")).sendKeys("Advetising");
+	 	driver.findElement(By.name("campaignName")).sendKeys("Advetising123");
 	 	driver.findElement(By.name("campaignStatus")).sendKeys("Accepted");
-	 	driver.findElement(By.name("targetSize")).sendKeys("5");
+	 	driver.findElement(By.name("targetSize")).sendKeys("6");
 	 	driver.findElement(By.xpath("//button[.='Create Campaign']")).click();
 	 	
 	 	//Navigate to Leads
@@ -41,18 +41,19 @@ public class CreateLeadWithCampaignTest {
 	 	driver.findElement(By.linkText("Leads")).click();
 	 	
 	 	//Click on create lead
-	 	
+		Thread.sleep(8000);
+
 	 	driver.findElement(By.xpath("//span[.='Create Lead']")).click();
 	 	
 	 	//Create lead with campaign
-	 	driver.findElement(By.name("name")).sendKeys("Sita");
+	 	driver.findElement(By.name("name")).sendKeys("Test Lead I");
 			driver.findElement(By.name("company")).sendKeys("TCS");
 			driver.findElement(By.name("leadSource")).sendKeys("Marketing");
 			driver.findElement(By.name("industry")).sendKeys("IT");
 			driver.findElement(By.name("leadStatus")).sendKeys("Accepted");
 			driver.findElement(By.name("phone")).sendKeys("9999897601");
 			driver.findElement(By.name("rating")).sendKeys("3");
-	 	 
+
 			//navigate to campagin page
 			driver.findElement(By.xpath("//*[local-name()='svg']/parent::button")).click();
 			
@@ -78,8 +79,8 @@ public class CreateLeadWithCampaignTest {
 			Select s = new Select(selDropdown);
 			s.selectByVisibleText("Campaign Name");
 			
-			driver.findElement(By.id("search-input")).sendKeys("Campaign1");
-			driver.findElement(By.xpath("//td[.='Campaign1']/following-sibling::td/child::button")).click();
+			driver.findElement(By.id("search-input")).sendKeys("Advetising123");
+			driver.findElement(By.xpath("//td[.='Advetising123']/following-sibling::td/child::button")).click();
 			
 			//switch the window control to main
 			driver.switchTo().window(mainWindID);
@@ -92,7 +93,7 @@ public class CreateLeadWithCampaignTest {
 		    for(WebElement ele:list)
 		    {
 		    	String leadInfo = ele.getText();
-		    	if(leadInfo.equalsIgnoreCase("Chaitra"))
+		    	if(leadInfo.equalsIgnoreCase("Test Lead I"))
 		    	{
 		    		System.out.println(leadInfo);
 		    		System.out.println("Lead added successfully");
