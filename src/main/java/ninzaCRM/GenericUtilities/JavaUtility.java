@@ -1,6 +1,7 @@
 package ninzaCRM.GenericUtilities;
 
 import java.util.Date;
+import java.util.Random;
 
 /**
  * This class consists of generic method related to Java
@@ -20,5 +21,12 @@ public class JavaUtility {
 		String date = dArr[2]+"-"+dArr[1]+"-"+dArr[5]+"_"+dArr[3].replace(":", "-");
 		return date;
 	}
+	
+	public int getRandomNumber()
+	{
+	Random r = new Random();
+	int ranNum =r.nextInt(1000);
+	return ranNum;
+	}// for handle DuplicateNames
 
 }

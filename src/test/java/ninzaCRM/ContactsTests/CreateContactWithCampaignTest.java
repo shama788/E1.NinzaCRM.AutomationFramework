@@ -35,16 +35,16 @@ public class CreateContactWithCampaignTest {
 			 	driver.findElement(By.name("targetSize")).sendKeys("4");
 			 	driver.findElement(By.xpath("//button[.='Create Campaign']")).click();
 			 	
-			 	//Navigate to Leads
+			 	//Navigate to contact
 			 	
 			 	driver.findElement(By.linkText("Contacts")).click();
 			 	
-			 	//Click on create lead
+			 	//Click on create contact
 				Thread.sleep(8000);
 
 			 	driver.findElement(By.xpath("//span[.='Create Contact']")).click();
 			 	
-			 	//Create lead with campaign
+			 	//Create contact with campaign
 					driver.findElement(By.name("organizationName")).sendKeys("TCS");
 					driver.findElement(By.name("title")).sendKeys("Shams");
 					driver.findElement(By.name("contactName")).sendKeys("Sharma");
@@ -81,7 +81,7 @@ public class CreateContactWithCampaignTest {
 					//switch the window control to main
 					driver.switchTo().window(mainWindID);
 					
-					//Click on create lead
+					//Click on create contact
 					driver.findElement(By.xpath("//button[.='Create Contact']")).click();
 					
 					//Validation
@@ -89,7 +89,7 @@ public class CreateContactWithCampaignTest {
 				    for(WebElement ele:list)
 				    {
 				    	String leadInfo = ele.getText();
-				    	if(leadInfo.equalsIgnoreCase("Sharma"))
+				    	if(leadInfo.equalsIgnoreCase("Test Lead I"))
 				    	{
 				    		System.out.println(leadInfo);
 				    		System.out.println("Contact added successfully");

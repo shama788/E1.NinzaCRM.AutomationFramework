@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
@@ -31,7 +32,7 @@ public class CreateLeadWithCampaignTest {
 	 	 driver.findElement(By.xpath("//span[.='Create Campaign']")).click();
 	 	 
 	 	//Create Campaign with Madatory Field
-	 	driver.findElement(By.name("campaignName")).sendKeys("Advetising123");
+	 	driver.findElement(By.name("campaignName")).sendKeys("Advetisinggg");
 	 	driver.findElement(By.name("campaignStatus")).sendKeys("Accepted");
 	 	driver.findElement(By.name("targetSize")).sendKeys("6");
 	 	driver.findElement(By.xpath("//button[.='Create Campaign']")).click();
@@ -46,7 +47,7 @@ public class CreateLeadWithCampaignTest {
 	 	driver.findElement(By.xpath("//span[.='Create Lead']")).click();
 	 	
 	 	//Create lead with campaign
-	 	driver.findElement(By.name("name")).sendKeys("Test Lead I");
+	 	driver.findElement(By.name("name")).sendKeys("Test Leaddd");
 			driver.findElement(By.name("company")).sendKeys("TCS");
 			driver.findElement(By.name("leadSource")).sendKeys("Marketing");
 			driver.findElement(By.name("industry")).sendKeys("IT");
@@ -79,8 +80,8 @@ public class CreateLeadWithCampaignTest {
 			Select s = new Select(selDropdown);
 			s.selectByVisibleText("Campaign Name");
 			
-			driver.findElement(By.id("search-input")).sendKeys("Advetising123");
-			driver.findElement(By.xpath("//td[.='Advetising123']/following-sibling::td/child::button")).click();
+			driver.findElement(By.id("search-input")).sendKeys("Advetisinggg");
+			driver.findElement(By.xpath("//td[.='Advetisinggg']/following-sibling::td/child::button")).click();
 			
 			//switch the window control to main
 			driver.switchTo().window(mainWindID);
@@ -93,13 +94,24 @@ public class CreateLeadWithCampaignTest {
 		    for(WebElement ele:list)
 		    {
 		    	String leadInfo = ele.getText();
-		    	if(leadInfo.equalsIgnoreCase("Test Lead I"))
+		    	if(leadInfo.equalsIgnoreCase("Test Leaddd"))
 		    	{
 		    		System.out.println(leadInfo);
 		    		System.out.println("Lead added successfully");
 		    		break;
 		    	}
 		    }
+		   
+		    Thread.sleep(8000);
+		    
+		    //Logout 
+		    WebElement ele = driver.findElement(By.xpath("//div[@class='user-icon']"));
+			Actions act = new Actions(driver);
+			act.moveToElement(ele).perform();
+			
+			Thread.sleep(3000);
+			driver.findElement(By.xpath("//div[@class='dropdown-item logout']")).click();
+			System.out.println("Logout successful");
 				
 	 		
 	}

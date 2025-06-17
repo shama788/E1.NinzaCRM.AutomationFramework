@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ninzaCRM.LeadsTests.CreateLeadWithCampaignTest">
+      <class name="ninzaCRM.OpportunitiesTests.CreateOpportunityWithLeadTest">
         <methods>
-          <include name="tc_01_createLeadWithCampaign"/>
+          <include name="tc_03_createOpportunityWithLead"/>
         </methods>
-      </class> <!-- ninzaCRM.LeadsTests.CreateLeadWithCampaignTest -->
+      </class> <!-- ninzaCRM.OpportunitiesTests.CreateOpportunityWithLeadTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
