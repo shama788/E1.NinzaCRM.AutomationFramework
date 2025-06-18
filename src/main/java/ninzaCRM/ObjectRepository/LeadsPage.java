@@ -7,6 +7,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+/**
+ * This class consists of methods related to web element of Leads Page
+ * 
+ * @author Admin
+ */
 public class LeadsPage {
 	
 	@FindBy(xpath = "//span[.='Create Lead']")
