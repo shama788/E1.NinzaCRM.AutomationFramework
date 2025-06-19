@@ -23,7 +23,7 @@ public class CampaignPage extends SeleniumUtility{
 	private WebElement leadsLnk;
 
 	@FindBy(linkText = "Contacts")
-	private WebElement contactsLnk;
+	private WebElement contactsLnk; 
 
 	@FindBy(linkText = "Opportunities")
 	private WebElement oppotunitiesLnk;
