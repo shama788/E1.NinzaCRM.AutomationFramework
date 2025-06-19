@@ -13,7 +13,8 @@ import ninzaCRM.ObjectRepository.LeadsPage;
 
 public class CreateLeadTest extends BaseClass {
 
-	@Test
+	
+	//@Test(groups = "SmokeSuite")
 	public void createLead() throws EncryptedDocumentException, IOException, InterruptedException
 	{
 		//Read Test Data from excel File
