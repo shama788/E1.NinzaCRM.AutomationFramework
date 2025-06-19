@@ -1,81 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-16T19:06:44 IST" name="Default suite" finished-at="2025-06-16T19:07:28 IST" duration-ms="43723">
+  <suite started-at="2025-06-19T15:11:36 IST" name="Default suite" finished-at="2025-06-19T15:12:54 IST" duration-ms="78038">
     <groups>
     </groups>
-    <test started-at="2025-06-16T19:06:44 IST" name="Default test" finished-at="2025-06-16T19:07:28 IST" duration-ms="43723">
-      <class name="ninzaCRM.OpportunitiesTests.CreateOpportunityWithLeadTest">
-        <test-method signature="tc_03_createOpportunityWithLead()[pri:0, instance:ninzaCRM.OpportunitiesTests.CreateOpportunityWithLeadTest@53aac487]" started-at="2025-06-16T19:06:44 IST" name="tc_03_createOpportunityWithLead" finished-at="2025-06-16T19:07:27 IST" duration-ms="43486" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window
-  (Session info: MicrosoftEdge=137.0.3296.83)
-Build info: version: '4.12.1', revision: '8e34639b11'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.26'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [13e14a8ece1a4b4c83359bae8db15cba, switchToWindow {handle=799D0AA8993D1BEB5C1A10590729FE5C}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 137.0.3296.83, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:56604}, msedge: {msedgedriverVersion: 137.0.3296.83 (24e00e9cccf2..., userDataDir: C:\Users\Admin\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56604/devtoo..., se:cdpVersion: 137.0.3296.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 13e14a8ece1a4b4c83359bae8db15cba]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window
-  (Session info: MicrosoftEdge=137.0.3296.83)
-Build info: version: '4.12.1', revision: '8e34639b11'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.26'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [13e14a8ece1a4b4c83359bae8db15cba, switchToWindow {handle=799D0AA8993D1BEB5C1A10590729FE5C}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 137.0.3296.83, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:56604}, msedge: {msedgedriverVersion: 137.0.3296.83 (24e00e9cccf2..., userDataDir: C:\Users\Admin\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56604/devtoo..., se:cdpVersion: 137.0.3296.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 13e14a8ece1a4b4c83359bae8db15cba
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.window(RemoteWebDriver.java:1146)
-at ninzaCRM.OpportunitiesTests.CreateOpportunityWithLeadTest.tc_03_createOpportunityWithLead(CreateOpportunityWithLeadTest.java:132)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+    <test started-at="2025-06-19T15:11:36 IST" name="Default test" finished-at="2025-06-19T15:12:54 IST" duration-ms="78038">
+      <class name="ninzaCRM.LeadsTests.CreateLeadTest">
+        <test-method is-config="true" signature="bsConfig()[pri:0, instance:ninzaCRM.LeadsTests.CreateLeadTest@3e8c3cb]" started-at="2025-06-19T15:11:36 IST" name="bsConfig" finished-at="2025-06-19T15:11:36 IST" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc_03_createOpportunityWithLead -->
-      </class> <!-- ninzaCRM.OpportunitiesTests.CreateOpportunityWithLeadTest -->
+        </test-method> <!-- bsConfig -->
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:ninzaCRM.LeadsTests.CreateLeadTest@3e8c3cb]" started-at="2025-06-19T15:11:36 IST" name="bcConfig" finished-at="2025-06-19T15:12:02 IST" duration-ms="26034" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:ninzaCRM.LeadsTests.CreateLeadTest@3e8c3cb]" started-at="2025-06-19T15:12:02 IST" name="bmConfig" finished-at="2025-06-19T15:12:04 IST" duration-ms="2288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="createLead()[pri:0, instance:ninzaCRM.LeadsTests.CreateLeadTest@3e8c3cb]" started-at="2025-06-19T15:12:04 IST" name="createLead" finished-at="2025-06-19T15:12:48 IST" duration-ms="43636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createLead -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:ninzaCRM.LeadsTests.CreateLeadTest@3e8c3cb]" started-at="2025-06-19T15:12:48 IST" name="amConfig" finished-at="2025-06-19T15:12:53 IST" duration-ms="5270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:ninzaCRM.LeadsTests.CreateLeadTest@3e8c3cb]" started-at="2025-06-19T15:12:53 IST" name="acConfig" finished-at="2025-06-19T15:12:54 IST" duration-ms="653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+        <test-method is-config="true" signature="asConfig()[pri:0, instance:ninzaCRM.LeadsTests.CreateLeadTest@3e8c3cb]" started-at="2025-06-19T15:12:54 IST" name="asConfig" finished-at="2025-06-19T15:12:54 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- asConfig -->
+      </class> <!-- ninzaCRM.LeadsTests.CreateLeadTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
