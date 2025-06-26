@@ -53,6 +53,25 @@
     <scope>provided</scope>
 </dependency>
   </dependencies>
-  
+    <profiles>
+      <!-- for execution suite file in command prompt for unique suite id that used in cmd-->
+       <profile>
+   <id>smoke</id>
+     <build>
+<plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.5.2</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testng-SmokeSuite.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+</plugins>
+   </build>
+   </profile>
+    </profiles>
   
 </project>
