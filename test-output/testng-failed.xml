@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ninzaCRM.ContactsTests.CreateContactTest">
+      <class name="ninzaCRM.ContactsTests.VerifyDeletedCampaignInContactTest">
         <methods>
           <include name="amConfig"/>
           <include name="acConfig"/>
-          <include name="createContact"/>
           <include name="asConfig"/>
+          <include name="verifyDeletedCampaign"/>
           <include name="bsConfig"/>
           <include name="bmConfig"/>
           <include name="bcConfig"/>
         </methods>
-      </class> <!-- ninzaCRM.ContactsTests.CreateContactTest -->
+      </class> <!-- ninzaCRM.ContactsTests.VerifyDeletedCampaignInContactTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

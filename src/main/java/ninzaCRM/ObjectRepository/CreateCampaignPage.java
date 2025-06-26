@@ -48,6 +48,7 @@ public class CreateCampaignPage {
 	public void createCampaign(String CampaignName, String TargetSize)
 	{
 		campaignNameTxt.sendKeys(CampaignName);
+		targetSizeTxt.clear();
 		targetSizeTxt.sendKeys(TargetSize);
 		createCampaignBtn.click();
 	}

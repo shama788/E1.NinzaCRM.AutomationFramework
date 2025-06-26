@@ -9,12 +9,14 @@ import ninzaCRM.GenericUtilities.BaseClass;
 import ninzaCRM.ObjectRepository.CampaignPage;
 import ninzaCRM.ObjectRepository.CreateCampaignPage;
 import ninzaCRM.ObjectRepository.CreateLeadPage;
+import ninzaCRM.ObjectRepository.CreateOpportunityPage;
 import ninzaCRM.ObjectRepository.LeadsPage;
 
 public class CreateLeadTest extends BaseClass {
 
 	
 	//@Test(groups = "SmokeSuite")
+	@Test
 	public void createLead() throws EncryptedDocumentException, IOException, InterruptedException
 	{
 		//Read Test Data from excel File
@@ -43,7 +45,7 @@ public class CreateLeadTest extends BaseClass {
 		Thread.sleep(8000);
 		
 		//Click on leads Link
-		cp.clickOnLeadsLnk();
+		cp.clickOnLeadsLnk(); 
 		
 		//click on create lead button
 		LeadsPage lp = new LeadsPage(driver);
@@ -52,6 +54,9 @@ public class CreateLeadTest extends BaseClass {
 		//Create lead with mandatory fields
 		CreateLeadPage clp = new CreateLeadPage(driver);
 		clp.createLeadWithCampaign(driver, LEADNAME, COMPANY, LEADSOURCE, INDUSTRY, PHONE, LEADSTATUS, RATING, CAMPAIGNNAME);
+		
+		Thread.sleep(8000);
+		
 		
 		//Validate for the lead
 		lp.captureLeadNamesAndCompare(LEADNAME);
