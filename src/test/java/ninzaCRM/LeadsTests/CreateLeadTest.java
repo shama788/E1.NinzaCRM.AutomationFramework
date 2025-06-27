@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.time.Duration;
 
 import org.apache.poi.EncryptedDocumentException;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
 import ninzaCRM.GenericUtilities.BaseClass;
@@ -37,7 +38,7 @@ public class CreateLeadTest extends BaseClass {
 		
 		//Click on create campaign
 		CampaignPage cp = new CampaignPage(driver);
-		cp.clickOnCreateCampaignBtn(driver);
+		cp.clickOnCreateCampaignBtn();
 		
 		
 		//Create campaign with mandatory fields
