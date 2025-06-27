@@ -1,6 +1,7 @@
 package ninzaCRM.LeadsTests;
 
 import java.io.IOException;
+import java.time.Duration;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.testng.annotations.Test;
@@ -38,11 +39,14 @@ public class CreateLeadTest extends BaseClass {
 		CampaignPage cp = new CampaignPage(driver);
 		cp.clickOnCreateCampaignBtn();
 		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
 		//Create campaign with mandatory fields
 		CreateCampaignPage ccp = new CreateCampaignPage(driver);
 		ccp.createCampaign(CAMPAIGNNAME, TARGETSIZE);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
-		Thread.sleep(8000);
+		//Thread.sleep(8000);
 		
 		//Click on leads Link
 		cp.clickOnLeadsLnk(); 
