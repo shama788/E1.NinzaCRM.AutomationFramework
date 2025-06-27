@@ -64,6 +64,17 @@ public class SeleniumUtility {
 	}
 	
 	/**
+	 * This method will wait for 10s explicit
+	 * @param driver
+	 * @param element
+	 */
+	public void addExplicitWait(WebDriver driver, WebElement element)
+	{
+		WebDriverWait exwait = new WebDriverWait(driver,Duration.ofSeconds(10));
+		exwait.until(ExpectedConditions.elementToBeClickable(element));
+	}
+	
+	/**
 	 * This method will handle drop down by index
 	 * @param element
 	 * @param index

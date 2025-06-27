@@ -131,8 +131,10 @@ public class CampaignPage extends SeleniumUtility{
 	 * 
 	 */
 
-	public void clickOnCreateCampaignBtn() {
+	public void clickOnCreateCampaignBtn(WebDriver driver) {
+		addExplicitWait(driver, createCampaignBtn);
 		createCampaignBtn.click();
+		addExplicitWait(driver, createCampaignBtn);
 
 	}
 	

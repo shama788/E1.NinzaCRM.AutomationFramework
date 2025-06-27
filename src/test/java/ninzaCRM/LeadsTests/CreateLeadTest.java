@@ -37,13 +37,13 @@ public class CreateLeadTest extends BaseClass {
 		
 		//Click on create campaign
 		CampaignPage cp = new CampaignPage(driver);
-		cp.clickOnCreateCampaignBtn();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		cp.clickOnCreateCampaignBtn(driver);
+		
 		
 		//Create campaign with mandatory fields
 		CreateCampaignPage ccp = new CreateCampaignPage(driver);
 		ccp.createCampaign(CAMPAIGNNAME, TARGETSIZE);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		
 		
 		//Thread.sleep(8000);
 		
