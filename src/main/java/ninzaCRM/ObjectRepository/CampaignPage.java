@@ -1,6 +1,5 @@
 package ninzaCRM.ObjectRepository;
 
-import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.Alert;
@@ -132,10 +131,8 @@ public class CampaignPage extends SeleniumUtility{
 	 * 
 	 */
 
-	public void clickOnCreateCampaignBtn(WebDriver driver) {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	public void clickOnCreateCampaignBtn() {
 		createCampaignBtn.click();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 	}
 	
