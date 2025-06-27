@@ -1,16 +1,20 @@
 package ninzaCRM.ObjectRepository;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import ninzaCRM.GenericUtilities.SeleniumUtility;
 
 /**
  * This class consists of methods related to web element Create campaign page
  * @author Admin
  */
 
-public class CreateCampaignPage {
+public class CreateCampaignPage{
 	
 	@FindBy(name = "campaignName")
 	private WebElement campaignNameTxt;
@@ -45,12 +49,14 @@ public class CreateCampaignPage {
 	 * @param CampaignName
 	 * @param TargetSize
 	 */
-	public void createCampaign(String CampaignName, String TargetSize)
+	public void createCampaign(WebDriver driver, String CampaignName, String TargetSize)
 	{
 		campaignNameTxt.sendKeys(CampaignName);
 		targetSizeTxt.clear();
 		targetSizeTxt.sendKeys(TargetSize);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		createCampaignBtn.click();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 
 }
