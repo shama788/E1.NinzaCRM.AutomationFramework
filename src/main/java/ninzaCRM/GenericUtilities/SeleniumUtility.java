@@ -71,7 +71,7 @@ public class SeleniumUtility {
 	public void addExplicitWait(WebDriver driver, WebElement element)
 	{
 		WebDriverWait exwait = new WebDriverWait(driver,Duration.ofSeconds(10));
-		exwait.until(ExpectedConditions.elementToBeClickable(element));
+		exwait.until(ExpectedConditions.elementToBeClickable(element ));
 	}
 	
 	/**

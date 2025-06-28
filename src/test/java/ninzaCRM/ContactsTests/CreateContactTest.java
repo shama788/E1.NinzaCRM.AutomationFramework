@@ -1,8 +1,13 @@
 package ninzaCRM.ContactsTests;
 
+
+import org.testng.AssertJUnit;
 import java.io.IOException;
 
+
 import org.apache.poi.EncryptedDocumentException;
+import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import ninzaCRM.GenericUtilities.BaseClass;
@@ -10,6 +15,8 @@ import ninzaCRM.ObjectRepository.CampaignPage;
 import ninzaCRM.ObjectRepository.ContactsPage;
 import ninzaCRM.ObjectRepository.CreateCampaignPage;
 import ninzaCRM.ObjectRepository.CreateContactPage;
+
+@Listeners(ninzaCRM.GenericUtilities.ListenersImplementation.class)
 
 public class CreateContactTest extends BaseClass{
 	
@@ -33,6 +40,7 @@ public class CreateContactTest extends BaseClass{
 				CampaignPage cp = new CampaignPage(driver);
 				cp.clickOnCreateCampaignBtn();
 				
+				
 				//Create campaign with mandatory fields
 				CreateCampaignPage ccp = new CreateCampaignPage(driver);
 				ccp.createCampaign(CAMPAIGNNAME, TARGETSIZE);
@@ -45,6 +53,8 @@ public class CreateContactTest extends BaseClass{
 				//click on create contacts button
 				ContactsPage cpp = new ContactsPage(driver);
 				cpp.clickOnCreateContactBtn();
+				
+				AssertJUnit.fail();
 				
 				//Create contact with mandatory fields
 				CreateContactPage cconp = new CreateContactPage(driver);
