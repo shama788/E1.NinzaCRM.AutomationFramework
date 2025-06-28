@@ -54,7 +54,7 @@ public class CreateContactTest extends BaseClass{
 				ContactsPage cpp = new ContactsPage(driver);
 				cpp.clickOnCreateContactBtn();
 				
-				AssertJUnit.fail();
+				//AssertJUnit.fail();
 				
 				//Create contact with mandatory fields
 				CreateContactPage cconp = new CreateContactPage(driver);
